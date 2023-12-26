@@ -45,12 +45,14 @@ body {
 .title {
     font-size: 88px;
     line-height: 88px;
+    letter-spacing: -1px;
     margin-bottom: 50px;
 }
 
 .description {
     font-size: 20px;
     line-height: 34px;
+    letter-spacing: 0px;
 }
 
 .premium-eq-section {
@@ -96,6 +98,7 @@ body {
     font-size: 20px;
     line-height: 34px;
     margin-bottom: 30px;
+    letter-spacing: 0px;
 }
 
 .price-per-month {
@@ -199,3 +202,152 @@ body {
     fill: #FA7453;
 }
 
+/* --------------Media queries------------- */
+
+
+/* Tablet design */
+
+@media only screen and (max-width:1300px) {
+
+    .main-container {
+        background-image: url('assets/bg-main-tablet.png');
+        background-size: 124vw 120vw;
+        background-position-y: -9%;
+        background-position-x: 78%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .title-bg-pattern {
+        width: 270px;
+    }
+
+    .title-and-description-container {
+        width: 500px;
+    }
+
+    .title {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.73px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .premium-desription-container {
+        width: 380px;
+        padding: 30px;
+        top: 184px;
+        right: 64px;
+    }
+
+    .phone-image {
+        left: 60px;
+        top: -158px;
+    }
+
+    .premium-bg-pattern {
+        left: 245px;
+    }
+
+    .premium-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .logo-and-contact {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-bottom: 25px;
+    }
+}
+
+/* Mobile design */
+
+@media only screen and (max-width: 725px) {
+
+    .main-container {
+        background-image: url('assets/bg-main-mobile.png');
+        background-position-y: -13%;
+        background-position-x: -43%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .title-bg-pattern {
+        display: none;
+    }
+
+    .title-and-description-container {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 300px;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.45px;
+    }
+
+    .premium-eq-section {
+        background-image: url('assets/bg-pattern-2.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 550px;
+    }
+
+    .premium-desription-container {
+        width: 100%;
+        padding: 30px;
+        position: relative;
+        left: 0;
+        top: 500px;
+    }
+
+    .premium-bg-pattern {
+       display: none;
+    }
+
+    .phone-image {
+        width: 50%;
+        left: 25%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .logo-and-contact {
+        margin-bottom: 60px;
+        width: 95%;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+
+    .contact {
+        width: 95%;
+    }
+
+    .email {
+        display: block;
+    }
+
+    .footer-icons {
+        width: 95%;
+        text-align: left;
+        
+    }
+
+}
